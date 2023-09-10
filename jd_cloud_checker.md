@@ -2,7 +2,7 @@ The code for this library can be found [here](https://github.com/JaegerwaldDev/F
 
 # JDCloudChecker
 
-Shows a little icon in the corner of your screen to show if your avatar is currently uploaded to the figura cloud or not.
+Shows a little icon in the corner of your screen to show if your avatar is currently uploaded to the Figura cloud or not.
 
 ## Instruction on how to add this to your avatar
 
