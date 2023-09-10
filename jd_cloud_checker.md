@@ -16,3 +16,18 @@ function events.tick()
     jd_cloud_checker.tick(true)
 end
 ```
+
+## Screenshots
+
+<img src="https://raw.githubusercontent.com/JaegerwaldDev/FiguraLibs/main/screenshots/JDCloudChecker_NotUploaded.png">
+<sub>If the avatar is not currently uploaded to the Figura Cloud.</sub>
+
+---
+
+<img src="https://raw.githubusercontent.com/JaegerwaldDev/FiguraLibs/main/screenshots/JDCloudChecker_HideUploaded.png">
+<sub>If the avatar is currently uploaded to the Figura Cloud. (Without uploaded icon)</sub>
+
+---
+
+<img src="https://raw.githubusercontent.com/JaegerwaldDev/FiguraLibs/main/screenshots/JDCloudChecker_ShowUploaded.png">
+<sub>If the avatar is currently uploaded to the Figura Cloud. (With uploaded icon)</sub>
