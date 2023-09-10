@@ -1,6 +1,9 @@
---[[
-
-    JDCloudChecker for Figura
+--[[                                                                   __________
+                                                                ______/          \__
+        __  ____   _____  _              _  _____  _           /  _  /            \ \       
+     __|  ||    \ |     || | ___  _ _  _| ||     || |_  ___  ___ | |_  ___  ___     /\
+    |  |  ||  |  ||   --|| || . || | || . ||   --||   || -_||  _|| '_|| -_||  _|      |
+    |_____||____/ |_____||_||___||___||___||_____||_|_||___||___||_,_||___||_|   ____/
 
     Developed by https://www.github.com/JaegerwaldDev
     GitHub @ https://www.github.com/JaegerwaldDev/FiguraLibs
@@ -8,9 +11,12 @@
 
     Copyright (c) JaegerwaldDev 2023
 
-    Description: Shows a little icon in the corner of your screen to show if your avatar is currently uploaded to the Figura cloud or not.
+    Description: Shows a little icon in the corner of your screen to show if your avatar is currently uploaded to the figura cloud or not.
+    Version: 1.1.0
 
 ]]--
+
+local jailib = require("modules.jailib.main")
 
 local jd_cloud_checker = {
     data = {
@@ -19,7 +25,7 @@ local jd_cloud_checker = {
             uploaded = "iVBORw0KGgoAAAANSUhEUgAAABgAAAAQCAMAAAA7+k+nAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABaUExURQAAAOL2/vr///////T8//7//wCEIRPdRvP8/+H1/t/1/uD0/tv0/t3z/tvz/tTy/tfy/tXx/tTw/s/v/tDv/tHu/tDu/szu/svu/snu/sju/sru/sfu/gAAAKd5KMkAAAAedFJOU///////////////////////////////////////AOwYHF4AAAAJcEhZcwAADsMAAA7DAcdvqGQAAAClSURBVChTVZAJEoMgDEVjQihd7apW5f7X7E9AOr4ZDPwX40K5QUbd41Qrdp3RztuGqGOjmVIRdyxGM162OITQjF0xxbuDr52wZhEViW0YLnYD4qCq8RC1GtoGxZInhTlaO51Yaq8tTRBnFxdGrgmp5UD4esMg6u9uSr8h/HhCZHq9/Zs5lsL8GQYTmcZxAl8wg2lZ7F/6m63rPK9/LHOBB+1AkvMPdXYUCy3CdPsAAAAASUVORK5CYII=",
             none = "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAANSURBVBhXY2BgYGAAAAAFAAGKM+MAAAAAAElFTkSuQmCC"
         },
-        cloud_sprite = models.model.HUD:newSprite("cloud_sprite"),
+        cloud_sprite = jailib.hud:newSprite("cloud_sprite"),
         position = {
             normal = vec(-8, -8, 0),
             debug = vec(-8, -235, 0)
