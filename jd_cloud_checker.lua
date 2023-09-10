@@ -8,7 +8,7 @@
 
     Copyright (c) JaegerwaldDev 2023
 
-    Description: Shows a little icon in the corner of your screen to show if your avatar is currently uploaded to the figura cloud or not.
+    Description: Shows a little icon in the corner of your screen to show if your avatar is currently uploaded to the Figura cloud or not.
 
 ]]--
 
