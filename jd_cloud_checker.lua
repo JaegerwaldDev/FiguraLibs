@@ -4,6 +4,7 @@
 
     Developed by https://www.github.com/JaegerwaldDev
     GitHub @ https://www.github.com/JaegerwaldDev/FiguraLibs
+    Documentation @ https://github.com/JaegerwaldDev/FiguraLibs/blob/main/jd_cloud_checker.md
 
     Copyright (c) JaegerwaldDev 2023
 
