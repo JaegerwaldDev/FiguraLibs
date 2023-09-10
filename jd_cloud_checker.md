@@ -5,7 +5,7 @@ The code for this library can be found [here](https://github.com/JaegerwaldDev/F
 Shows a little icon in the corner of your screen to show if your avatar is currently uploaded to the Figura cloud or not.
 
 > **Important**
-> For this script to work you have to have a HUD group in your bbmodel file, that can be accessed with `models.model.HUD`!
+> For this script to work you have to have a HUD group in your `.bbmodel` file, that can be accessed with `models.model.HUD`!
 
 ## Instruction on how to add this to your avatar
 
