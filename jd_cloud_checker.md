@@ -22,6 +22,9 @@ function events.tick()
 end
 ```
 
+Latest Release: [JDCloudChecker 1.1](https://github.com/JaegerwaldDev/FiguraLibs/blob/main/jd_cloud_checker.md](https://github.com/JaegerwaldDev/FiguraLibs/releases/tag/JDCloudChecker-1.1)https://github.com/JaegerwaldDev/FiguraLibs/releases/tag/JDCloudChecker-1.1)
+
+
 ## Screenshots
 
 <img src="https://raw.githubusercontent.com/JaegerwaldDev/FiguraLibs/main/screenshots/JDCloudChecker_NotUploaded.png">
