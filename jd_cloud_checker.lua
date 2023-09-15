@@ -12,7 +12,7 @@
     Copyright (c) JaegerwaldDev 2023
 
     Description: Shows a little icon in the corner of your screen to show if your avatar is currently uploaded to the figura cloud or not.
-    Version: 1.1.0
+    Version: 1.2.0
 
 ]]--
 
