@@ -37,23 +37,45 @@ textures:read("jd_cloud_checker.not_uploaded", jd_cloud_checker.data.sprites.not
 textures:read("jd_cloud_checker.uploaded", jd_cloud_checker.data.sprites.uploaded)
 textures:read("jd_cloud_checker.none", jd_cloud_checker.data.sprites.none)
 
-jd_cloud_checker.data.cloud_sprite:setTexture(textures:get("jd_cloud_checker.none"), 24, 16)
+jd_cloud_checker.data.cloud_sprite:setTexture(textures:get("jd_cloud_checker.not_uploaded"), 24, 16)
+
+function jd_cloud_checker.main()
+    if client:isDebugOverlayEnabled() then
+        jd_cloud_checker.data.cloud_sprite:setPos(jd_cloud_checker.data.position.debug)
+    else
+        jd_cloud_checker.data.cloud_sprite:setPos(jd_cloud_checker.data.position.normal)
+    end
+
+    if host:isAvatarUploaded() then
+        jd_cloud_checker.data.cloud_sprite:setTexture(textures:get("jd_cloud_checker.none"), 24, 16)
+        events.tick:remove("JDCloudChecker")
+    end
+end
+
+function jd_cloud_checker.main_show_uploaded()
+    if client:isDebugOverlayEnabled() then
+        jd_cloud_checker.data.cloud_sprite:setPos(jd_cloud_checker.data.position.debug)
+    else
+        jd_cloud_checker.data.cloud_sprite:setPos(jd_cloud_checker.data.position.normal)
+    end
+
+    if host:isAvatarUploaded() then
+        jd_cloud_checker.data.cloud_sprite:setTexture(textures:get("jd_cloud_checker.uploaded"), 24, 16)
+        events.tick:remove("JDCloudChecker")
+    end
+end
 
 function jd_cloud_checker.tick(show_uploaded)
     show_uploaded = show_uploaded or false
 
-    if host:isHost() and not client:isDebugOverlayEnabled() then
-        jd_cloud_checker.data.cloud_sprite:setPos(jd_cloud_checker.data.position.normal)
-    elseif host:isHost() and client:isDebugOverlayEnabled() then
-        jd_cloud_checker.data.cloud_sprite:setPos(jd_cloud_checker.data.position.debug)
-    end
-
-    if not host:isAvatarUploaded() then
-        jd_cloud_checker.data.cloud_sprite:setTexture(textures:get("jd_cloud_checker.not_uploaded"), 24, 16)
-    elseif host:isAvatarUploaded() and show_uploaded then
-        jd_cloud_checker.data.cloud_sprite:setTexture(textures:get("jd_cloud_checker.uploaded"), 24, 16)
+    if show_uploaded then
+        events.tick:register(function()
+            jd_cloud_checker.main_show_uploaded()
+        end, "JDCloudChecker")
     else
-        jd_cloud_checker.data.cloud_sprite:setTexture(textures:get("jd_cloud_checker.none"), 24, 16)
+        events.tick:register(function()
+            jd_cloud_checker.main()
+        end, "JDCloudChecker")
     end
 end
 
