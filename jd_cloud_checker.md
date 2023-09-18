@@ -22,7 +22,7 @@ function events.entity_init()
 end
 ```
 
-Latest Release: [JDCloudChecker 1.2](https://github.com/JaegerwaldDev/FiguraLibs/releases/tag/JDCloudChecker-1.2)
+Latest Release: [JDCloudChecker 1.3](https://github.com/JaegerwaldDev/FiguraLibs/releases/tag/JDCloudChecker-1.3)
 
 
 ## Screenshots
