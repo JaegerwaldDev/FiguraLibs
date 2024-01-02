@@ -4,8 +4,8 @@ The code for this library can be found [here](https://github.com/JaegerwaldDev/F
 
 Shows a little icon in the corner of your screen to show if your avatar is currently uploaded to the Figura cloud or not.
 
-[!IMPORTANT]
-For this script to work, you'll also have to have my JaiLib module in the modules folder.
+>> [!IMPORTANT]
+>> For this script to work, you'll also have to have my JaiLib module in the modules folder.
 
 ## Instruction on how to add this to your avatar
 
